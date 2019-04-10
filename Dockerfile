@@ -10,7 +10,7 @@ RUN conda config --set ssl_verify False
 RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org nbgitpuller && \
     jupyter serverextension enable --py nbgitpuller
 
-RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org jupyros && \
+RUN pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org bqplot pyyaml jupyros && \
     jupyter serverextension enable --py jupyros 
 
 RUN conda install --quiet --yes \
